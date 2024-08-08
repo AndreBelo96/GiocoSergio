@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://cy7ht5ydom8be"]
+
+[ext_resource type="Script" path="res://scripts/Enemy.gd" id="1_mmvws"]
+[ext_resource type="Texture2D" uid="uid://qd7hwlieiaxi" path="res://icon.svg" id="2_qpcaw"]
+
+[node name="Enemy" type="Node2D"]
+position = Vector2(165, 106)
+script = ExtResource("1_mmvws")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-18.5, -18)
+scale = Vector2(0.710938, 0.71875)
+texture = ExtResource("2_qpcaw")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -37.0
+offset_top = -67.0
+offset_right = 10.0
+offset_bottom = 29.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 70
+text = "E"
+metadata/_edit_use_anchors_ = true

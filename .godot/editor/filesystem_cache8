@@ -1,0 +1,8 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1723151959
+icon.svg::CompressedTexture2D::1131171248672254294::1722808147::1722808186::1::::<><>::
+::res://scenes/::1722982395
+game.tscn::PackedScene::357053927929556994::1722982395::0::1::::<><>::res://scripts/Player.gd<>uid://qd7hwlieiaxi::::res://icon.svg
+::res://scripts/::1722983341
+Player.gd::GDScript::-1::1722983341::0::1::::<>CharacterBody2D<>::
+::res://spirtes/::1722893977
