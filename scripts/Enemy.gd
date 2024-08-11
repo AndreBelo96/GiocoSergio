@@ -22,13 +22,16 @@ var current_state
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	current_state = State.IDLE;
+	
+	position.x = 20;
+	position.y = -20;
+	
+	number_of_steps = 0;
 	number_of_actions = 0;
-	position.x = 20
-	position.y = -20
-	number_of_steps = 0
+	
 	life_points = MAX_HP;
 	movement = 500;
-	speed = 10;
+	speed = 6;
 	range_attack = 150;
 	range_battle = 500;
 
@@ -39,19 +42,20 @@ func _process(delta):
 	print("STATE: " + str(current_state))
 	
 	if ((check_player_in_range(range_battle) || life_points < MAX_HP) && current_state != State.DEAD):
+		print("Enemy: Battle")
 		current_state = State.BATTLE
+		$"../Player".current_state = $"../Player".State.BATTLE #TODO
 	else:
 		current_state = State.IDLE
+		print("Enemy: Idle")
 	
 	if (current_state == State.BATTLE && number_of_actions <= (MAX_ACTION - 1)):
-		print("IF in BATTLE")
-		print("Number of action: " + str(number_of_actions))
 		if (check_player_in_range(range_attack)):
 			print("ATTACK")
 			$"../Player".lifePoints -= 1;
 			number_of_actions += 1;
 			print("Life Player: " + str($"../Player".lifePoints))
-			await get_tree().create_timer(1).timeout
+			await get_tree().create_timer(1).timeout 
 		else:
 			print("MOVE")
 			if (number_of_steps <= movement):
@@ -67,7 +71,7 @@ func _process(delta):
 	
 	if (current_state == State.DEAD):
 		visible = false;
-		# delete object
+		# TODO delete object
 
 ## controlla se il player è in un determinato range passato  in input
 func check_player_in_range(range) -> bool:

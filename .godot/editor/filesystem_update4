@@ -1,1 +1,5 @@
+res://scenes/game.tscn
 res://scripts/Enemy.gd
+res://scripts/Player.gd
+res://scenes/enemy.tscn
+res://scripts/game.gd
