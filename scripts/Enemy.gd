@@ -67,6 +67,7 @@ func _process(delta):
 	
 	if (current_state == State.DEAD):
 		visible = false;
+		# delete object
 
 ## controlla se il player è in un determinato range passato  in input
 func check_player_in_range(range) -> bool:
@@ -80,6 +81,7 @@ func check_player_in_range(range) -> bool:
 	else:
 		return false;
 
+## Movimento verso il player
 func move_towards_player(movement):
 	var playerPos = $"../Player".position
 	number_of_steps += 1;
@@ -93,8 +95,6 @@ func move_towards_player(movement):
 		position.y += 1
 	else:
 		position.y -= 1
-	
-
 
 
 ## trova il modulo di un numero
