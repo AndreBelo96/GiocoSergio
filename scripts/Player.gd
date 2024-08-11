@@ -31,7 +31,7 @@ func _process(delta):
 		else:
 			current_state = State.IDLE
 	
-	print(current_state)
+	#print(current_state)
 
 func _physics_process(delta):
 	var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
@@ -45,5 +45,5 @@ func _input(event):
 	if Input.is_action_pressed("shoot"):
 		current_state = State.ATTACK
 		await get_tree().create_timer(1).timeout
-		$"../Enemy".lifePoints -= 5
+		$"../Enemy".life_points -= 5
 		current_state = State.IDLE

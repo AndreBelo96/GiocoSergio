@@ -1,8 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1723151959
+::res://::1723398046
 icon.svg::CompressedTexture2D::1131171248672254294::1722808147::1722808186::1::::<><>::
-::res://scenes/::1722982395
-game.tscn::PackedScene::357053927929556994::1722982395::0::1::::<><>::res://scripts/Player.gd<>uid://qd7hwlieiaxi::::res://icon.svg
-::res://scripts/::1722983341
-Player.gd::GDScript::-1::1722983341::0::1::::<>CharacterBody2D<>::
+::res://scenes/::1723397963
+enemy.tscn::PackedScene::6523894264793785546::1723397963::0::1::::<><>::res://scripts/Enemy.gd<>uid://qd7hwlieiaxi::::res://icon.svg
+game.tscn::PackedScene::357053927929556994::1723397963::0::1::::<><>::uid://bwn0ra2nfsk8t::::res://scenes/player.tscn<>uid://cy7ht5ydom8be::::res://scenes/enemy.tscn
+player.tscn::PackedScene::3958960480155917021::1723152710::0::1::::<><>::res://scripts/Player.gd<>uid://qd7hwlieiaxi::::res://icon.svg
+::res://scripts/::1723397963
+Enemy.gd::GDScript::-1::1723397963::0::1::::<>Node2D<>::
+Player.gd::GDScript::-1::1723395502::0::1::::<>CharacterBody2D<>::
 ::res://spirtes/::1722893977
