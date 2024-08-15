@@ -12,7 +12,7 @@ position = Vector2(-18.5, -18)
 scale = Vector2(0.710938, 0.71875)
 texture = ExtResource("2_qpcaw")
 
-[node name="Label" type="Label" parent="."]
+[node name="E" type="Label" parent="."]
 offset_left = -37.0
 offset_top = -67.0
 offset_right = 10.0
@@ -21,3 +21,10 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 70
 text = "E"
 metadata/_edit_use_anchors_ = true
+
+[node name="life" type="Label" parent="."]
+offset_left = -59.0
+offset_top = -93.0
+offset_right = -19.0
+offset_bottom = -70.0
+text = "life: "

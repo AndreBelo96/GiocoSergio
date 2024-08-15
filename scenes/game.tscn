@@ -8,6 +8,17 @@
 script = ExtResource("1_a6rgx")
 
 [node name="Player" parent="." instance=ExtResource("1_4wfsm")]
+position = Vector2(746, 383)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(0.8, 0.8)
+
+[node name="Label" type="Label" parent="Player/Camera2D"]
+offset_left = 579.0
+offset_top = -382.0
+offset_right = 668.0
+offset_bottom = -359.0
+text = "LIFE: "
 
 [node name="Enemy" parent="." instance=ExtResource("2_tbvxp")]
-position = Vector2(298, 123)
+position = Vector2(71, 77)
