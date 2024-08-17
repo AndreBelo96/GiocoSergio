@@ -104,4 +104,9 @@ func find_module(number):
 	else:
 		return number * -1;
 
+<<<<<<< Updated upstream
 
+=======
+func root(n, s) -> float:
+	return pow(n, (1/s))
+>>>>>>> Stashed changes

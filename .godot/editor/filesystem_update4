@@ -1,1 +1,7 @@
 res://scripts/Enemy.gd
+<<<<<<< Updated upstream
+=======
+res://scripts/game.gd
+res://scenes/enemy.tscn
+res://scenes/player.tscn
+>>>>>>> Stashed changes
