@@ -6,6 +6,7 @@ enum State {
 	DEAD
 }
 
+
 const MAX_HP = 10
 const MAX_ACTION = 3
 
@@ -32,6 +33,7 @@ func _ready():
 	range_attack = 150;
 	range_battle = 500;
 
+	print("ciao")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
